@@ -8,6 +8,8 @@ motivation for build: fun 1 day app build
 
 TODO
 
+in /src/app/weather-api.service.ts
+
 ```ts
 import { Injectable } from "@angular/core";
 import { HTTP } from "@ionic-native/http/ngx";
