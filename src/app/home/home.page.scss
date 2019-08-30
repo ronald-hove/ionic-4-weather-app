@@ -1,1 +1,51 @@
+ion-list {
+  padding: 0 !important;
+}
+
+ion-content {
+  --background: var(--ion-color-primary);
+}
+
+ion-item {
+  --background: var(--ion-color-primary);
+}
+
+h1 {
+  color: var(--ion-color-secondary);
+}
+
+.weather{
+    font-size: 6rem !important;
+}
+
+.weather-icon{
+    width: 30%;
+}
+
+.city-name{
+    margin-top: 1.6rem !important;
+    font-size: 2.4rem !important;
+}
+
+ion-icon {
+  color: var(--ion-color-secondary);
+}
+
+.controls{
+    font-size: 3.2rem !important;
+}
+
+.time{
+  font-size: 1.4rem !important;
+}
+
+.refresh{
+  --background: #4788C7;
+}
+
+@media(max-width: 360px){
+  .time{
+    font-size: 1rem !important;
+  }
+}
 
