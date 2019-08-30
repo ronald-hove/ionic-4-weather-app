@@ -32,6 +32,26 @@ export class WeatherApiService {
 }
 ```
 
+HOW TO RUN
+
+clone repo
+
+```txt
+npm i
+```
+In browser
+
+```txt
+ionic serve
+```
+On device
+
+```txt
+ionic cordova run android
+```
+
+
+
 Preview
 
 ![Preview Image](weatherApp.jpeg)
