@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: "root"
 })
 export class WeatherApiService {
-  apiKey = "5e3a65ac45f9e9f434d4433b52ae1fd2";
+  apiKey = "Your Open Weather Map API Key Here";
 
   constructor(private http: HTTP, private ngHttp: HttpClient) {}
 
