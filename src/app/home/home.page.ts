@@ -48,11 +48,8 @@ export class HomePage {
     this.weather
       .getWeather(data.coords.latitude, data.coords.longitude)
       .subscribe(response => {
-        console.log(response);
         this.weatherResponse = response;
-        this.currentWeather = this.weatherResponse.list[this.firstIndex];
-        this.nextWeather = this.weatherResponse.list[this.secondIndex];
-        this.currentIcon = `http://openweathermap.org/img/w/${this.currentWeather.weather[0].icon}.png`;
+        this.adjustWeather();
       });
   }
 
@@ -64,17 +61,16 @@ export class HomePage {
     }
   }
 
-  private adjustWeather() {
-    this.currentWeather = this.weatherResponse.list[this.firstIndex];
-    this.nextWeather = this.weatherResponse.list[this.secondIndex];
-    this.currentIcon = `http://openweathermap.org/img/w/${this.currentWeather.weather[0].icon}.png`;
-  }
-
   goToPrevTime() {
     if (this.firstIndex !== 0) {
       this.firstIndex--;
       this.secondIndex--;
       this.adjustWeather();
     }
+  }
+  private adjustWeather() {
+    this.currentWeather = this.weatherResponse.list[this.firstIndex];
+    this.nextWeather = this.weatherResponse.list[this.secondIndex];
+    this.currentIcon = `http://openweathermap.org/img/w/${this.currentWeather.weather[0].icon}.png`;
   }
 }
